@@ -1,4 +1,4 @@
-package com.evolve.integration.KafkaApp;
+package com.evolve.integration.KafkaApp.standalone;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -6,7 +6,7 @@ import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.util.Properties;
 
-public class SimpleKafkaProducer {
+public class KafkaStandaloneProducer {
 
     public static void main(String[] args) {
         Properties properties = new Properties();

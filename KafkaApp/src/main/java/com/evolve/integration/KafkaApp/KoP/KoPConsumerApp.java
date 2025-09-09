@@ -1,10 +1,20 @@
-package com.evolve.integration.KafkaApp;
+package com.evolve.integration.KafkaApp.KoP;
 
-import com.evolve.integration.kafka.consumer.KafkaConsumer;
+import java.util.Properties;
 
-public class ConsumerApp {
+import com.evolve.integration.kafka.basic.consumer.KafkaConsumer;
+
+
+public class KoPConsumerApp {
+    private static final String SERVICE_URL = "pulsar://localhost:6650";
+    private static final String TOPIC = "persistent://public/default/my-topic";
     public static void main(String[] args) throws Exception {
-        try (KafkaConsumer consumer = new KafkaConsumer("pulsar://localhost:6650", "my-topic", "my-group")) {
+        Properties consumerProps = new Properties();
+        consumerProps.put("bootstrap.servers", SERVICE_URL);
+        consumerProps.put("topic", TOPIC);
+        consumerProps.put("group.id", "test-group");
+        consumerProps.put("auto.offset.reset", "earliest");
+        try (KafkaConsumer consumer = new KafkaConsumer(consumerProps)) {
             consumer.poll();
         }
     }

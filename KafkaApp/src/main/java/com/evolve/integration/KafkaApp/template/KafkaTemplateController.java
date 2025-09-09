@@ -1,4 +1,4 @@
-package com.evolve.integration.KafkaApp;
+package com.evolve.integration.KafkaApp.template;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.evolve.integration.kafka.producer.MessageProducer;
 
 @RestController
-public class KafkaController {
+public class KafkaTemplateController {
 
     @Autowired
     private MessageProducer messageProducer;

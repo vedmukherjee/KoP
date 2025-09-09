@@ -1,4 +1,4 @@
-package com.evolve.integration.KafkaApp;
+package com.evolve.integration.KafkaApp.standalone;
 
 import org.apache.pulsar.client.api.PulsarClient;
 import org.apache.pulsar.client.api.Producer;

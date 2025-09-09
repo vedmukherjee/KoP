@@ -1,4 +1,4 @@
-package com.evolve.integration.KafkaApp;
+package com.evolve.integration.KafkaApp.template;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.pulsar.core.PulsarTemplate;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/messages")
-public class PulsarController {
+public class PulsarTemplateController {
 
     @Autowired
     private PulsarTemplate<String> pulsarTemplate;

@@ -1,4 +1,4 @@
-package com.evolve.integration.KafkaApp;
+package com.evolve.integration.KafkaApp.standalone;
 
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
@@ -8,7 +8,7 @@ import java.time.Duration;
 import java.util.Collections;
 import java.util.Properties;
 
-public class SimpleKafkaConsumer {
+public class KafkaStandaloneConsumer {
 
     public static void main(String[] args) {
         Properties properties = new Properties();
