@@ -29,7 +29,17 @@
 		<java.version>21</java.version>
 	</properties>
 	<dependencies>
-
+		<dependency>
+			<groupId>org.apache.pulsar</groupId>
+			<artifactId>pulsar-client-kafka-original</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+		    <!-- Netty -->
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>4.1.96.Final</version>
+		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.apache.pulsar/pulsar-client-kafka -->
 
